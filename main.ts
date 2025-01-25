@@ -4,6 +4,16 @@
  * This function examines the `userAgent`, `vendor`, and `opera` properties from the `navigator` object to determine
  * whether the device is a mobile device such as Android, iPhone, iPad, or other mobile OS types.
  *
+ * ## Usage
+ *
+ * ```typescript
+ * import { isMobileDevice } from "mobile_device_checker";
+ *
+ * // Check if the device is mobile
+ * const result = isMobileDevice();
+ * console.log(result); // true if mobile device, false otherwise
+ * ```
+ *
  * @returns {boolean} - Returns `true` if the device is a mobile device (Android, iOS, etc.), `false` otherwise.
  */
 export default function isMobileDevice(): boolean {
@@ -13,5 +23,5 @@ export default function isMobileDevice(): boolean {
   if (!userAgent) return false;
 
   // Check for mobile devices using a regex pattern
-  return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent?.toLowerCase());
+  return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent.toLowerCase());
 }
