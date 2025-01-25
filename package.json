@@ -1,0 +1,30 @@
+{
+  "name": "moblie_device_checker",
+  "version": "1.1.0",
+  "description": "This package provides the `isMobileDevice` utility function that determines whether the current device is a mobile device based on the `userAgent` string. It checks various user agents to identify devices like Android, iOS, BlackBerry, and other mobile operating systems.",
+  "keywords": [
+    "mobile",
+    "devcie",
+    "checker",
+    "is",
+    "mobile",
+    "device",
+    "mobileDeviceChecker",
+    "isMobileDevice"
+  ],
+  "homepage": "https://github.com/Jasurbek2208/Moblie_Device_Checker#readme",
+  "bugs": {
+    "url": "https://github.com/Jasurbek2208/Moblie_Device_Checker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jasurbek2208/Moblie_Device_Checker.git"
+  },
+  "license": "MIT",
+  "author": "Jasurbek Shomaqsudov",
+  "type": "commonjs",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
