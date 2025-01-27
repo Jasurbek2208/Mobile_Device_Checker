@@ -16,12 +16,7 @@
  *
  * @returns {boolean} - Returns `true` if the device is a mobile device (Android, iOS, etc.), `false` otherwise.
  */
-export default function isMobileDevice(): boolean {
-  const userAgent: string = navigator?.userAgent || navigator?.vendor || (window as any)?.opera || "";
-
-  // Ensure the userAgent is valid and check for mobile devices
-  if (!userAgent) return false;
-
-  // Check for mobile devices using a regex pattern
-  return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent.toLowerCase());
+export default function isMobileDevice():boolean{
+  const uA:string=navigator?.userAgent||navigator?.vendor||(window as any)?.opera||"";
+  return uA?/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(uA?.toLowerCase()):false;
 }
